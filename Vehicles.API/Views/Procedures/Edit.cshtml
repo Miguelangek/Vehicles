@@ -1,4 +1,5 @@
-﻿@model Vehicles.API.Data.Entities.VehicleType
+﻿
+@model Vehicles.API.Data.Entities.Procedure
 
 @{
     ViewData["Title"] = "Edit";
@@ -6,15 +7,15 @@
 
 <h1>Editar</h1>
 
-<h4>Tipo de Vehiculo</h4>
+<h4>Procedimiento</h4>
 <hr />
 <div class="row">
     <div class="col-md-12">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
-           
-            <partial name="_VehicleType"/>
+
+            <partial name="_Procedure" />
 
             <div class="form-group">
                 <input type="submit" value="Guardar" class="btn btn-primary" />

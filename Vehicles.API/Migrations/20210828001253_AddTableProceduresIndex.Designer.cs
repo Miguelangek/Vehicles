@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Vehicles.API.Data;
 
 namespace Vehicles.API.Migrations
 {
     [DbContext(typeof(DateContext))]
-    partial class DateContextModelSnapshot : ModelSnapshot
+    [Migration("20210828001253_AddTableProceduresIndex")]
+    partial class AddTableProceduresIndex
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

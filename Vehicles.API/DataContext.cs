@@ -2,5 +2,6 @@
 {
     internal class DataContext
     {
+        public object VehicleTypes { get; internal set; }
     }
 }
